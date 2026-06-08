@@ -15,7 +15,10 @@
 
     <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Chbeen SH home">Chbeen SH</a>
+        <a class="brand" href="#top" aria-label="Chbeen SH home">
+          <span class="brand-mark" aria-hidden="true">*</span>
+          <span>Chbeen SH</span>
+        </a>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
@@ -27,19 +30,20 @@
 
     <main id="main">
       <section id="top" class="hero" aria-labelledby="intro-heading">
-        <div class="hero-content">
+        <div class="hero-copy">
           <p class="eyebrow">Personal website</p>
-          <h1 id="intro-heading">Hi, I am Chbeen SH.</h1>
+          <h1 id="intro-heading">Chbeen SH</h1>
           <p class="intro">
-            I build thoughtful digital projects and use this page to share my
-            work, background, and CV.
+            I build clear, useful software and use this page to share my work,
+            background, and current CV.
           </p>
           <div class="actions" aria-label="Primary actions">
             <a class="button primary" href="assets/cv.pdf">View CV</a>
             <a class="button secondary" href="#contact">Get in touch</a>
           </div>
         </div>
-        <div class="portrait-wrap" aria-label="Profile photo">
+
+        <aside class="profile-panel" aria-label="Profile summary">
           <img
             class="portrait"
             src="assets/profile.png"
@@ -47,10 +51,23 @@
             width="320"
             height="320"
           >
-        </div>
+          <div class="profile-meta">
+            <span class="badge">Software projects</span>
+            <dl>
+              <div>
+                <dt>Focus</dt>
+                <dd>Readable systems and practical prototypes</dd>
+              </div>
+              <div>
+                <dt>Approach</dt>
+                <dd>Careful iteration, accessible interfaces, steady learning</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
       </section>
 
-      <section id="about" class="section" aria-labelledby="about-heading">
+      <section id="about" class="section editorial" aria-labelledby="about-heading">
         <div class="section-heading">
           <p class="eyebrow">About</p>
           <h2 id="about-heading">Focused, practical, and curious.</h2>
@@ -69,6 +86,7 @@
         </div>
         <div class="project-grid">
           <article class="project-card">
+            <span class="card-mark" aria-hidden="true">*</span>
             <h3>Research and learning</h3>
             <p>
               Notes, experiments, and technical explorations that turn ideas
@@ -76,6 +94,7 @@
             </p>
           </article>
           <article class="project-card">
+            <span class="card-mark" aria-hidden="true">*</span>
             <h3>Software projects</h3>
             <p>
               Small web and programming projects built with attention to
@@ -83,12 +102,39 @@
             </p>
           </article>
           <article class="project-card">
+            <span class="card-mark" aria-hidden="true">*</span>
             <h3>Portfolio updates</h3>
             <p>
               A place to keep recent work visible and connect future visitors
               with the right materials.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section class="section dark-showcase" aria-labelledby="workflow-heading">
+        <div class="dark-copy">
+          <p class="eyebrow on-dark">Workflow</p>
+          <h2 id="workflow-heading">Build, test, refine.</h2>
+          <p>
+            I prefer lightweight tools, direct feedback, and code that remains
+            easy to understand after the first version ships.
+          </p>
+        </div>
+        <div class="code-window" aria-label="Working style notes">
+          <div class="window-bar" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <pre><code>profile:
+  strengths:
+    - practical prototypes
+    - accessible web pages
+    - readable implementation
+  current_site:
+    platform: GitHub Pages
+    assets: local</code></pre>
         </div>
       </section>
 
@@ -101,10 +147,10 @@
             education, and selected work.
           </p>
         </div>
-        <a class="button primary" href="assets/cv.pdf">Open CV PDF</a>
+        <a class="button inverse" href="assets/cv.pdf">Open CV PDF</a>
       </section>
 
-      <section id="contact" class="section" aria-labelledby="contact-heading">
+      <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
         <div class="section-heading">
           <p class="eyebrow">Contact</p>
           <h2 id="contact-heading">Connect</h2>
@@ -117,7 +163,13 @@
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Chbeen SH. Built for GitHub Pages.</p>
+      <div class="footer-inner">
+        <a class="footer-brand" href="#top" aria-label="Chbeen SH home">
+          <span class="brand-mark" aria-hidden="true">*</span>
+          <span>Chbeen SH</span>
+        </a>
+        <p>&copy; 2026 Chbeen SH. Built for GitHub Pages.</p>
+      </div>
     </footer>
   </body>
 </html>
