@@ -1,7 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Personal website for Chbeen SH with profile, projects, and CV."
+    >
+    <title>Chbeen SH | Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
   <body>
-    <h1>Welcome to my Personal Page</h1>
-    <p>Hosted on Github Pages!</p>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Chbeen SH home">Chbeen SH</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="assets/cv.pdf">CV</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero" aria-labelledby="intro-heading">
+        <div class="hero-content">
+          <p class="eyebrow">Personal website</p>
+          <h1 id="intro-heading">Hi, I am Chbeen SH.</h1>
+          <p class="intro">
+            I build thoughtful digital projects and use this page to share my
+            work, background, and CV.
+          </p>
+          <div class="actions" aria-label="Primary actions">
+            <a class="button primary" href="assets/cv.pdf">View CV</a>
+            <a class="button secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="portrait-wrap" aria-label="Profile photo">
+          <img
+            class="portrait"
+            src="assets/profile.png"
+            alt="Portrait of Chbeen SH"
+            width="320"
+            height="320"
+          >
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-heading">Focused, practical, and curious.</h2>
+        </div>
+        <p>
+          I am interested in building clear, useful software and learning
+          through hands-on technical projects. My work favors readable systems,
+          steady iteration, and practical results.
+        </p>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-heading">Selected work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Research and learning</h3>
+            <p>
+              Notes, experiments, and technical explorations that turn ideas
+              into working prototypes.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Software projects</h3>
+            <p>
+              Small web and programming projects built with attention to
+              clarity, accessibility, and maintainability.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Portfolio updates</h3>
+            <p>
+              A place to keep recent work visible and connect future visitors
+              with the right materials.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cv" class="section cv-section" aria-labelledby="cv-heading">
+        <div>
+          <p class="eyebrow">CV</p>
+          <h2 id="cv-heading">Resume and background</h2>
+          <p>
+            My CV includes more detail about my background, experience,
+            education, and selected work.
+          </p>
+        </div>
+        <a class="button primary" href="assets/cv.pdf">Open CV PDF</a>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-heading">Connect</h2>
+        </div>
+        <p>
+          For current projects and public code, visit
+          <a href="https://github.com/chbeensh">github.com/chbeensh</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Chbeen SH. Built for GitHub Pages.</p>
+    </footer>
   </body>
 </html>
